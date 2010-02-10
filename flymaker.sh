@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-dname (){ (cd $1 ; pwd); }
+dname (){ (eval "cd $1" ; pwd); }
 bdname(){ basename `dname $1`; }
 
 # if our module lives here;
